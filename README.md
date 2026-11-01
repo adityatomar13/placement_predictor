@@ -155,3 +155,11 @@ For students, explain the app in this order:
 12. Apply the same scaler
 13. Predict
 14. Show the result in Flask
+
+## Model performance
+- Accuracy: 68.75%
+- ROC-AUC: <0.67>
+
+
+## Limitations
+Trained on a small demo dataset; results are for learning purposes.
