@@ -1,3 +1,4 @@
+https://placement-predictor-dqxi.onrender.com
 # Student Placement Predictor — Flask + Machine Learning
 
 This is a complete beginner-friendly Flask project that:
