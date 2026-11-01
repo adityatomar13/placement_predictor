@@ -7,6 +7,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
+import graphs
+import matplotlib.pyplot as plt
+
 
 
 CATEGORICAL_COLUMNS = [
@@ -151,6 +154,8 @@ def train_model(csv_path="students_record.csv"):
     # -------------------------------------------------------
     y_pred = model.predict(X_test_scaled)
     accuracy = accuracy_score(Y_test, y_pred)
+    graphs.save_graphs(model, X.columns, X_test_scaled, Y_test,
+    Path(csv_path).parent / "static")
 
     return model, scaler, X.columns, accuracy
 
